@@ -4,6 +4,7 @@ from numpy.core.fromnumeric import mean
 from scipy import stats
 
 from numpy.lib.function_base import average, median
+## Below returns the middle value if odd and two middle values if even
 
 def return_med_index(m):
     rolls = np.empty(3)
@@ -16,13 +17,15 @@ def return_med_index(m):
     else:
         rolls[0] = m // 2
         return rolls[0:1]
+        
+# Prints the result        
 def do_stuff():
     rolls = np.array(return_med_index(x))
     rolls = rolls.astype(int)
     #print(arr)
     arr.sort()
     s0 = mean(arr)
-    s1 = mean(arr[rolls])
+    s1 = mean(arr[rolls])    #mean of middel two values if even
     s2 = stats.mode(arr)[0].astype(float)[0]
     print(round(s0,1))
     print(round(s1,1))
