@@ -36,39 +36,11 @@ n = int(input())
 arr= np.array(input().split(),dtype=int)
 x = arr.size
 if n == arr.size:
-    #print("d")
-    #print("check",np.all(np.logical_and(arr1 > 10, arr1 < 15)))
+    ##Check for condition value > 10 and < 10^5
     if (np.all(np.logical_and(arr < 10, arr < pow(10,5)))==True):
         print("Please enter number between 10 and powe(10,5)")
     else:
         do_stuff()
 else:
     print("Please enter",n,"numbers")
-
-
-
-
-
-
-
-
-
-    #if (np.all(np.logical_and(arr1 > 10, arr1 < 15))==True):
-     #   print("x")
-    #else:
-
-# print(arr1)
-# a_bool = np.any(arr1)
-# print(a_bool)
-
-# b_bool = np.all(arr1)
-# print(b_bool)
-
-# c_bool =np.where(arr1<10)
-# c_bool = np.array(c_bool)
-# print(c_bool.size)
-# print(c_bool)
-
-
-
 
