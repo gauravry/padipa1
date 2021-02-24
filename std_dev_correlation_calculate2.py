@@ -1,3 +1,4 @@
+#To print mean , variance , Standard Deviation
 import numpy 
 
 N, M = map(int, input().split())
