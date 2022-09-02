@@ -1,0 +1,53 @@
+{
+	"name": "AzureSqlTable1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlDatabase1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "Team",
+				"type": "varchar"
+			},
+			{
+				"name": "Opponent",
+				"type": "varchar"
+			},
+			{
+				"name": "date1",
+				"type": "date"
+			},
+			{
+				"name": "Matches",
+				"type": "varchar"
+			},
+			{
+				"name": "Result",
+				"type": "varchar"
+			},
+			{
+				"name": "Won",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "Lost",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "Drawn",
+				"type": "int",
+				"precision": 10
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "testseries"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
